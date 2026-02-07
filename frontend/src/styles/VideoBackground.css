@@ -1,0 +1,64 @@
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* GIS + AI Gradient Overlay */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 10, 30, 0.75),
+    rgba(0, 40, 80, 0.65),
+    rgba(0, 0, 0, 0.85)
+  );
+}
+
+@media (max-width: 600px) {
+  .bg-video {
+    display: none;
+  }
+
+  .video-container {
+    background: linear-gradient(
+      135deg,
+      #081426,
+      #0b2a4a,
+      #000000
+    );
+  }
+
+  .video-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 30, 60, 0.9)
+    );
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .video-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(0, 10, 30, 0.8),
+      rgba(0, 20, 50, 0.75),
+      rgba(0, 0, 0, 0.9)
+    );
+  }
+}

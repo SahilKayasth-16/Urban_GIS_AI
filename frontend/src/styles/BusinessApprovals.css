@@ -1,0 +1,164 @@
+/* ===== Admin Page Wrapper ===== */
+.admin-page {
+  position: relative;
+  padding: 90px 40px 40px;
+  min-height: 100vh;
+  color: #fff;
+  z-index: 2;
+}
+
+/* ===== Heading ===== */
+.admin-page h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* ===== Filter Tabs ===== */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.filter-tabs button {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.filter-tabs button:hover {
+  background: #00c6ff;
+  color: #000;
+}
+
+/* ===== Table Wrapper ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ===== Table Header ===== */
+thead {
+  background: rgba(0, 198, 255, 0.2);
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  font-weight: 600;
+}
+
+/* ===== Table Rows ===== */
+tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Status Text ===== */
+td:nth-child(4) {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* ===== Action Buttons ===== */
+td button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+td button:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Approved / Rejected colors ===== */
+td button:first-child {
+  background: #2ecc71;
+}
+
+td button:last-child {
+  background: #e74c3c;
+}
+
+/* ================================================= */
+/* ================== TABLET ======================= */
+/* ================================================= */
+@media (max-width: 992px) {
+  .admin-page {
+    padding: 80px 20px 30px;
+  }
+
+  .admin-page h2 {
+    font-size: 24px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+/* ================================================= */
+/* ================== MOBILE ======================= */
+/* ================================================= */
+@media (max-width: 600px) {
+  .admin-page {
+    padding: 70px 12px 20px;
+  }
+
+  .admin-page h2 {
+    font-size: 22px;
+  }
+
+  /* Stack filter buttons */
+  .filter-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-tabs button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* Make table scrollable */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  td button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}

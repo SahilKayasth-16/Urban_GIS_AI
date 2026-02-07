@@ -1,0 +1,44 @@
+.business-dashboard {
+    min-height: 100vh;
+    padding: 40px;
+    color: #ffffff;
+}
+
+.business-dashboard h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: #00c6ff;
+}
+
+.business-dashboard p {
+    margin-bottom: 30px;
+    opacity: 0.85;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .business-dashboard {
+        padding: 20px;
+    }
+
+    .business-dashboard h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* 📲 Tablet */
+@media (max-width: 992px) {
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

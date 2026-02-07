@@ -1,0 +1,44 @@
+.status {
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.status.pending {
+    background-color: #facc15;
+    color: #000;
+}
+
+.status.approved {
+    background-color: #22c55e;
+    color: #fff;
+}
+
+.status.rejected {
+    background-color: #ef4444;
+    color: #fff;
+}
+/* =====================
+   STATUS BADGE (RESPONSIVE)
+===================== */
+
+/* 📱 Mobile devices */
+@media (max-width: 576px) {
+    .status {
+        padding: 5px 10px;
+        font-size: 0.65rem;
+        border-radius: 10px;
+    }
+}
+
+/* 📱📱 Tablets */
+@media (max-width: 992px) {
+    .status {
+        padding: 6px 11px;
+        font-size: 0.7rem;
+        border-radius: 11px;
+    }
+}
