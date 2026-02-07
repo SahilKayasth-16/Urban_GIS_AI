@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "electricity",
+        "voltage": "220kV",
+        "name": "High Voltage Line"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [72.8777, 19.0760],
+          [73.8567, 18.5204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "electricity",
+        "voltage": "110kV",
+        "name": "Regional Power Line"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.2090, 28.6139],
+          [78.0081, 27.1767]
+        ]
+      }
+    }
+  ]
+}
