@@ -1,0 +1,74 @@
+.map-tools-panel {
+  position: absolute;
+  top: 90px;
+  left: 240px;
+  background: #1e1e1e;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  width: 180px;
+  z-index: 1000;
+}
+
+.tool-item {
+  margin-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 22px;
+  background: #2a2a2a;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.tool-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+.dropdown button:hover {
+  background: #444;
+}
+
+@media (max-width: 600px) {
+  .map-tools-panel {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 320px;
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .dropdown {
+    position: static;
+    margin-top: 6px;
+  }
+
+  .dropdown {
+    display: block;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .map-tools-panel {
+    top: 80px;
+    left: 180px;
+    width: 220px;
+  }
+}

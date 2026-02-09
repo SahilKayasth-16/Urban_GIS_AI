@@ -1,0 +1,160 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+}
+
+/* =====================
+   MAIN CONTAINER
+===================== */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =====================
+   HEADINGS
+===================== */
+.main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00c6ff;
+}
+
+.main h3 {
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.85;
+    color: #0072ff;
+}
+
+/* =====================
+   FORM
+===================== */
+form {
+    width: 420px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    margin-top: 15px;
+}
+
+form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+form input::placeholder {
+    color: #999;
+}
+
+/* =====================
+   BUTTON
+===================== */
+form button {
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+}
+
+/* =====================
+   FOOTER TEXT
+===================== */
+form h5 {
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+form a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+
+    .main {
+        padding: 20px;
+    }
+
+    .main h1 {
+        font-size: 1.9rem;
+    }
+
+    .main h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+    form input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    form h5 {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    form {
+        width: 90%;
+    }
+
+    .main h1 {
+        font-size: 2.2rem;
+    }
+
+    .main h3 {
+        font-size: 1.1rem;
+    }
+}

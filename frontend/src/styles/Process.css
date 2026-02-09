@@ -1,0 +1,117 @@
+/* Layout */
+.business-layout {
+    display: flex;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Main content */
+.business-content {
+    flex: 1;
+    padding: 40px 60px;
+    z-index: 1;
+}
+
+.business-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Approval steps container */
+.business-grid {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(0, 20, 60, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.25);
+}
+
+/* Individual steps */
+.business-grid h3 {
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 120, 255, 0.35),
+        rgba(0, 60, 160, 0.35)
+    );
+    font-weight: 500;
+    font-size: 18px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.business-grid h3:hover {
+    transform: translateX(6px);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 150, 255, 0.55),
+        rgba(0, 80, 200, 0.55)
+    );
+}
+
+/* ========================= */
+/* Tablet (≤ 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+    .business-content {
+        padding: 30px 40px;
+    }
+
+    .business-content h2 {
+        font-size: 24px;
+    }
+
+    .business-grid {
+        padding: 24px;
+    }
+
+    .business-grid h3 {
+        font-size: 16px;
+    }
+}
+
+/* ========================= */
+/* Mobile (≤ 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+    .business-layout {
+        flex-direction: column;
+    }
+
+    .business-content {
+        padding: 20px;
+    }
+
+    .business-content h2 {
+        font-size: 22px;
+    }
+
+    .business-grid {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .business-grid h3 {
+        font-size: 15px;
+        padding: 12px 14px;
+    }
+}
+
+/* ========================= */
+/* Small Phones (≤ 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+    .business-content h2 {
+        font-size: 20px;
+    }
+
+    .business-grid h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+}

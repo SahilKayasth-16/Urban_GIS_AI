@@ -1,0 +1,20 @@
+.status-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.status-table th,
+.status-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+    .status-table th,
+    .status-table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
